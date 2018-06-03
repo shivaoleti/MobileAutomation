@@ -1,0 +1,85 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+    <listeners>
+	<!-- 	<listener class-name="listener.ExtentReporterNG" /> -->
+	</listeners>
+
+  <test name="SignIN and Error Validation">
+  <classes>
+    <class name="tests.SignInTests" >
+             <methods>
+            <include name="userNameErrorValidation"/>
+            <include name="passWordErrorValidation"/>
+            <include name="signIn"/>
+            </methods>
+    </class>
+  </classes>
+</test>
+
+<!-- <test name="Home Page Tests">
+  <classes>
+    <class name="tests.HomePageTests" >
+             <methods>
+            <include name="verifyNavigationDrawerItems"/>
+            <include name="verifyHorizontalTabularItemsInHomePage"/>
+    </methods>
+    </class>
+  </classes>
+</test> -->
+<test name="Verify Department Tests">
+  <classes>
+    <class name="tests.DepartmentTests" >
+             <methods>
+            <include name="getDepartsList"/>
+           </methods>
+    </class>
+  </classes>
+</test>
+  <test name="SignOut">
+  <classes>
+    <class name="tests.SignOutTests" >
+             <methods>
+            <include name="signOut"/>
+           </methods>
+    </class>
+  </classes>
+</test>
+  
+
+  <test name="Search">
+  <classes>
+    <class name="tests.SearchTests" >
+             <methods>
+            <include name="verifyAllSearchFileds"/>
+            <include name="verifyResultsWithValidSearch"/>
+            <include name="verifyResultsWithInValidSearch"/>
+           </methods>
+    </class>
+  </classes>
+</test>
+
+<test name="Home Page Tests">
+  <classes>
+    <class name="tests.HomePageTests" >
+             <methods>
+            <include name="verifyNavigationDrawerItems"/>
+            <include name="verifyHorizontalTabularItemsInHomePage"/>
+    </methods>
+    </class>
+  </classes>
+</test>
+ <test name="Favourites Tests">
+  <classes>
+    <class name="tests.FavouritesTests">
+     <methods>
+            <include name="verifyFavouritiesIsEmpty"/>
+            <include name="searchAddToFavourities"/>
+            <include name="removeItemsFromFavourities"/>
+           </methods>
+    </class>    
+  </classes>
+</test>
+
+</suite>
+

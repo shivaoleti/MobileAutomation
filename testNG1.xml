@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression">
+	<test name="Regression1" preserve-order="true">
+		<groups>
+			<run>
+				<include name="100loginErrorValidation" />
+				<include name="101login" />
+				<include name="100searchAdd" />
+				<include name="100logOut" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="tests.SignInTest" />
+			<class name="tests.SearchAddRemoveTests" />
+			<class name="tests.SignOutTests" />
+		</classes>
+	</test>
+</suite>
+

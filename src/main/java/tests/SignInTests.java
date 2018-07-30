@@ -51,7 +51,7 @@ public class SignInTests extends TestBase{
        SplashScreenPage splash=new SplashScreenPage(new TestBase().getDriver());
        splash.clickBtnNext();
        s1.clickSignInButton();
-        s1.login("qualitytesting98@gmail.com","android1");
+        s1.login("qualitytesting98@gmail.com","automation");
         h1.clickCancelButtonIFExistsInHomeScreen();
     }
 
@@ -63,7 +63,7 @@ public class SignInTests extends TestBase{
        SignInPage s1=new SignInPage(new TestBase().getDriver());
        splash.clickBtnNext();
        s1.clickSignInButton();
-       s1.login("qualitytesting98@gmail.com","android1");
+       s1.login("qualitytesting98@gmail.com","automation");
        h1.clickCancelButtonIFExistsInHomeScreen();
      
    }

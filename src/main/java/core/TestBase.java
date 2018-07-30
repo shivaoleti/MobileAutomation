@@ -57,7 +57,7 @@ public  class TestBase {
     @AfterSuite(alwaysRun = true)
     protected void tearDown(){
 
-        appiumDriver.quit();
+     //   appiumDriver.quit();
     
     }
     

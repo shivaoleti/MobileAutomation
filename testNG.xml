@@ -5,7 +5,7 @@
 	<!-- 	<listener class-name="listener.ExtentReporterNG" /> -->
 	</listeners>
 
-  <test name="SignIN and Error Validation">
+  <!-- <test name="SignIN and Error Validation">
   <classes>
     <class name="tests.SignInTests" >
              <methods>
@@ -15,7 +15,7 @@
             </methods>
     </class>
   </classes>
-</test>
+</test> -->
 
 <!-- <test name="Home Page Tests">
   <classes>
@@ -27,7 +27,7 @@
     </class>
   </classes>
 </test> -->
-<test name="Verify Department Tests">
+<!-- <test name="Verify Department Tests">
   <classes>
     <class name="tests.DepartmentTests" >
              <methods>
@@ -78,6 +78,17 @@
             <include name="removeItemsFromFavourities"/>
            </methods>
     </class>    
+  </classes>
+</test> -->
+
+
+<test name="Payment Method Tests">
+  <classes>
+    <class name="tests.PaymentMethodsTest" >
+             <methods>
+               <include name="addCardInfoToApplication"/>
+            </methods>
+    </class>
   </classes>
 </test>
 

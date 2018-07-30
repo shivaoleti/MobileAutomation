@@ -4,10 +4,10 @@
 	<test name="Regression1" preserve-order="true">
 		<groups>
 			<run>
-				<include name="100loginErrorValidation" />
+			<!-- 	<include name="100loginErrorValidation" /> -->
 				<include name="101login" />
-				<include name="100searchAdd" />
-				<include name="100logOut" />
+				<!-- <include name="100searchAdd" />
+				<include name="100logOut" /> -->
 			</run>
 		</groups>
 
